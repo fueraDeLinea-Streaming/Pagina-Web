@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fuera De Línea - Canal de streaming desde Santa Rosa, La Pampa. Entretenimiento, fe y mensajes positivos. Transmisión en vivo todos los miércoles 19:00 HS."
+    />
+    <meta
+      name="keywords"
+      content="Fuera De Línea, streaming, La Pampa, Santa Rosa, podcast, entrevistas, fe, entretenimiento"
+    />
+    <title>Fuera De Línea - Streaming desde La Pampa</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-logo">
+          <h1>FUERA DE LÍNEA</h1>
+        </div>
+        <button class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#acerca" class="nav-link">Acerca</a></li>
+          <li><a href="#equipo" class="nav-link">Equipo</a></li>
+          <li><a href="#videos" class="nav-link">Videos</a></li>
+          <li><a href="#contenido" class="nav-link">Contenido</a></li>
+          <li><a href="#patrocinadores" class="nav-link">Patrocinadores</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <h1 class="hero-title">FUERA DE LÍNEA</h1>
+            <p class="hero-subtitle">
+              Un canal de streaming desde La Pampa que busca entretener,
+              divertir y siempre dejar un mensaje positivo
+            </p>
+
+            <!-- Live Banner -->
+            <div class="live-banner">
+              <div class="live-indicator">
+                <span class="pulse"></span>
+                <span class="live-text">EN VIVO</span>
+              </div>
+              <p class="live-schedule">TODOS LOS MIÉRCOLES 19:00 HS (ARG)</p>
+            </div>
+
+            <!-- Timezone Converter -->
+            <div class="timezone-info">
+              <i class="fas fa-clock"></i>
+              <p>
+                En tu zona horaria: <span id="userTimezone">Cargando...</span>
+              </p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+              <a
+                href="https://www.youtube.com/@FueraDeLinea-amen/streams"
+                target="_blank"
+                class="btn btn-primary btn-live"
+              >
+                <i class="fas fa-play-circle"></i> VER EN VIVO AHORA
+              </a>
+              <a
+                href="https://www.youtube.com/@FueraDeLinea-amen"
+                target="_blank"
+                class="btn btn-secondary"
+              >
+                <i class="fab fa-youtube"></i> SUSCRIBIRSE
+              </a>
+            </div>
+
+            <!-- Subscriber Count -->
+            <div class="subscriber-count">
+              <i class="fas fa-users"></i>
+              <span>121+ Suscriptores</span>
+            </div>
+          </div>
+
+          <!-- Video Presentation -->
+          <div class="hero-video">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/8jiVz46a5ys?si=hWW4wGBVWuB99JXa"
+                title="Presentación Fuera De Línea"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Countdown to Next Stream -->
+      <div class="countdown-section">
+        <div class="container">
+          <h3>Próxima transmisión en:</h3>
+          <div id="countdown" class="countdown">
+            <div class="countdown-item">
+              <span id="days">0</span>
+              <p>Días</p>
+            </div>
+            <div class="countdown-item">
+              <span id="hours">0</span>
+              <p>Horas</p>
+            </div>
+            <div class="countdown-item">
+              <span id="minutes">0</span>
+              <p>Minutos</p>
+            </div>
+            <div class="countdown-item">
+              <span id="seconds">0</span>
+              <p>Segundos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="acerca" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">ACERCA DE NOSOTROS</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p class="lead">
+              Somos un canal de streaming de
+              <strong>Santa Rosa, La Pampa</strong>. Nos encanta nuestra ciudad,
+              nuestra provincia y soñamos con poder pasear por nuestro país
+              mostrando cómo disfrutamos y transmitimos esa felicidad a nuestros
+              televidentes.
+            </p>
+
+            <p>
+              Nuestro enfoque principal es hacer pasar un buen momento al
+              público y poder transmitir un mensaje positivo y de reflexión. Si
+              bien aplicamos la religión, demostramos cómo puede acompañarnos en
+              la vida sin sesgarnos en el debate, invitando al público a
+              aceptarla como una forma positiva y real de mejorar nuestras
+              vidas.
+            </p>
+
+            <div class="mission-values">
+              <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h4>Entretenimiento</h4>
+                <p>Contenido que te hace reír y disfrutar</p>
+              </div>
+              <div class="value-card">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Reflexión</h4>
+                <p>Mensajes positivos que inspiran</p>
+              </div>
+              <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h4>Comunidad</h4>
+                <p>Un espacio para todos</p>
+              </div>
+              <div class="value-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h4>La Pampa</h4>
+                <p>Orgullosamente pampeanos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="team-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">NUESTRO EQUIPO</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Las personas detrás de Fuera De Línea</p>
+        </div>
+
+        <!-- Hosts -->
+        <div class="team-category">
+          <h3 class="category-title">Hosts Principales</h3>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-icon">
+                  <img src="./img/Brisa.jpg" alt="brisa">
+                </div>
+                <h4>Brisa</h4>
+                <p class="role">Host & Comunicadora</p>
+                <p class="bio">
+                  Estudiante de Comunicación Social en UNLPAM. Conocida por sus
+                  historias, especialmente por perder el colectivo.
+                </p>
+                <div class="team-badge">
+                  <i class="fas fa-bus"></i>
+                  <span>La del colectivo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-icon">
+                  <img src="./img/Aixa.jpg" alt="aixa">
+                </div>
+                <h4>Aixa</h4>
+                <p class="role">Host & Fotógrafa</p>
+                <p class="bio">
+                  La alegría del grupo. Estudiante de Comunicación Social en
+                  UNLPAM. Captura los mejores momentos con su cámara.
+                </p>
+                <div class="team-badge">
+                  <i class="fas fa-camera"></i>
+                  <span>La alegría</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-icon">
+                  <img src="./img/Diego2.jpg" alt="diego">
+                </div>
+                <h4>Diego</h4>
+                <p class="role">Host & Comunicador</p>
+                <p class="bio">
+                  Estudiante de Comunicación Social en UNLPAM. El matero
+                  oficial. Nunca lo verás sin un buen mate.
+                </p>
+                <div class="team-badge">
+                  <i class="fas fa-coffee"></i>
+                  <span>"Terrible"</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-icon">
+                  <img src="./img/Ema.jpg" alt="ema">
+                </div>
+                <h4>Emanuel (Ema)</h4>
+                <p class="role">Host & Consejero</p>
+                <p class="bio">
+                  La última adquisición. Aunque tiene más edad que los chicos,
+                  tiene mucha chispa y sabiduría para transmitir.
+                </p>
+                <div class="team-badge">
+                  <i class="fas fa-brain"></i>
+                  <span>La sabiduría</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Team -->
+        <div class="team-category">
+          <h3 class="category-title">Equipo Técnico</h3>
+          <div class="team-grid technical-team">
+            <div class="team-card-small">
+              <i class="fas fa-volume-up"></i>
+              <h5>Federico (Fede)</h5>
+              <p>Audio y Sonido</p>
+            </div>
+            <div class="team-card-small">
+              <i class="fas fa-clapperboard"></i>
+              <h5>Matías</h5>
+              <p>Productor</p>
+            </div>
+            <div class="team-card-small">
+              <i class="fas fa-video"></i>
+              <h5>Bruno</h5>
+              <p>Cámaras y Técnica</p>
+            </div>
+            <div class="team-card-small">
+              <i class="fas fa-video"></i>
+              <h5>Juanma</h5>
+              <p>Cámaras y Técnica</p>
+            </div>
+            <div class="team-card-small">
+              <i class="fas fa-palette"></i>
+              <h5>Romina (Romi)</h5>
+              <p>Redes, Miniaturas e Imagen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">VIDEOS DESTACADOS</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Nuestro mejor contenido</p>
+        </div>
+
+        <!-- Featured Videos -->
+        <div class="featured-videos">
+          <div class="video-card featured">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/43mrXnsQ3c4?si=a1iGsCbKUo8kcZrF"
+                title="Presentación de Fuera De Línea"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3>PRESENTACIÓN DE FUERA DE LÍNEA</h3>
+              <div class="video-meta">
+                <span><i class="fas fa-eye"></i> 160 views</span>
+                <span><i class="fas fa-clock"></i> 32:27</span>
+                <span><i class="fas fa-calendar"></i> Hace 2 meses</span>
+              </div>
+              <p>
+                Conoce más sobre nuestro canal, nuestra misión y lo que nos
+                apasiona hacer.
+              </p>
+            </div>
+          </div>
+
+          <div class="video-card featured">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/6pXsn3VZJ1E?si=PcHkoicyLlAKsr2k"
+                title="Entrevista Pastores Canas"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Extendiendo el Reino - Entrevista con los Pastores Canas</h3>
+              <div class="video-meta">
+                <span><i class="fas fa-eye"></i> 465 views</span>
+                <span><i class="fas fa-clock"></i> 25:31</span>
+                <span><i class="fas fa-calendar"></i> Hace 2 semanas</span>
+              </div>
+              <p>
+                Una conversación profunda sobre fe, ministerio y comunidad con
+                los Pastores Canas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Videos Grid -->
+        <div class="videos-grid">
+          <div class="video-card-small">
+            <a
+              href="https://www.youtube.com/embed/_RaF89rVN2Y?si=ISR99Pif2mfs_ykx"
+              target="_blank"
+            >
+              <div class="video-thumbnail-small">
+                <img
+                  src="./img/maxresdefault_1.jpg"
+                  alt="Video thumbnail"
+                />
+                <div class="play-overlay">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <h4>Stream destacado</h4>
+              <p>Contenido reciente del canal</p>
+            </a>
+          </div>
+
+          <div class="video-card-small">
+            <a
+              href="https://www.youtube.com/embed/ks_a8s-27cw?si=m1EgO8CrNrAmrtes"
+              target="_blank"
+            >
+              <div class="video-thumbnail-small">
+                <img
+                  src="./img/maxresdefault.jpg"
+                  alt="Video thumbnail"
+                />
+                <div class="play-overlay">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <h4>Stream destacado</h4>
+              <p>Contenido reciente del canal</p>
+            </a>
+          </div>
+
+          <div class="video-card-small">
+            <a
+              href="https://www.youtube.com/embed/U9AOxnDUDc0?si=bH3DS4FiU4Ib5rih"
+              target="_blank"
+            >
+              <div class="video-thumbnail-small">
+                <img
+                  src="./img/sddefault.jpg"
+                  alt="Video thumbnail"
+                />
+                <div class="play-overlay">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <h4>Stream destacado</h4>
+              <p>Contenido reciente del canal</p>
+            </a>
+          </div>
+
+          <div class="video-card-small">
+            <a
+              href="https://www.youtube.com/embed/YQUZTudrOnU?si=rZenci8pa3qKtV_d"
+              target="_blank"
+            >
+              <div class="video-thumbnail-small">
+                <img
+                  src="./img/maxresdefault_2.jpg"
+                  alt="Video thumbnail"
+                />
+                <div class="play-overlay">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <h4>Stream destacado</h4>
+              <p>Contenido reciente del canal</p>
+            </a>
+          </div>
+      </div>
+      <div class="button-center">
+          <a
+            href="https://www.youtube.com/@FueraDeLinea-amen/videos"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <i class="fab fa-youtube"></i> Ver más en YouTube
+          </a>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="contenido" class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">NUESTRO CONTENIDO</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Diversidad de formatos para todos los gustos
+          </p>
+        </div>
+
+        <div class="content-grid">
+          <div class="content-card">
+            <div class="content-icon">
+              <i class="fas fa-broadcast-tower"></i>
+            </div>
+            <h3>Streams en Vivo</h3>
+            <p class="content-schedule">
+              <strong>Todos los miércoles - 19:00 HS (Argentina)</strong>
+            </p>
+            <p>
+              Transmisiones en vivo con debates, invitados especiales y mucha
+              diversión. ¡No te lo pierdas!
+            </p>
+          </div>
+
+          <div class="content-card">
+            <div class="content-icon">
+              <i class="fas fa-microphone"></i>
+            </div>
+            <h3>Entrevistas</h3>
+            <p>
+              Conversaciones profundas con personalidades, líderes espirituales
+              e invitados especiales de nuestra comunidad.
+            </p>
+          </div>
+
+          <div class="content-card">
+            <div class="content-icon">
+              <i class="fas fa-podcast"></i>
+            </div>
+            <h3>Podcasts</h3>
+            <p>
+              Debates con y sin invitados sobre temas relevantes: familia, fe,
+              sociedad y cultura.
+            </p>
+          </div>
+
+          <div class="content-card">
+            <div class="content-icon">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3>Clips y Shorts</h3>
+            <p>
+              Contenido corto y dinámico para redes sociales. Los mejores
+              momentos en formato compacto.
+            </p>
+          </div>
+
+          <div class="content-card">
+            <div class="content-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3>Viajes y Aventuras</h3>
+            <p>
+              Explorando La Pampa y Argentina. Mostramos nuestra provincia y
+              compartimos nuestra pasión por viajar.
+            </p>
+          </div>
+
+          <div class="content-card">
+            <div class="content-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Segmentos Temáticos</h3>
+            <p>
+              Familia, fe, sociedad, cultura. Cada stream tiene una temática
+              específica para debatir y reflexionar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Coming Soon Banner -->
+        <div class="coming-soon-banner">
+          <div class="coming-soon-content">
+            <i class="fas fa-star"></i>
+            <h3>PRÓXIMAMENTE</h3>
+            <p class="lead">
+              Blog del Congreso y mucho más contenido exclusivo
+            </p>
+            <p>
+              Estamos trabajando en contenido especial del congreso. ¡Mantente
+              atento a nuestras redes sociales!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="patrocinadores" class="sponsors-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">NUESTROS PATROCINADORES</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Gracias por hacer posible Fuera De Línea
+          </p>
+        </div>
+
+        <div class="sponsors-grid">
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <h3>Faith Estampados</h3>
+            <p class="sponsor-description">
+              Estampados personalizados de alta calidad. Dale vida a tus ideas
+              con diseños únicos.
+            </p>
+            <div class="sponsor-contact">
+              <a
+                href="https://www.instagram.com/faith_estampados"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i> @faith_estampados
+              </a>
+            </div>
+          </div>
+
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <i class="fas fa-drumstick-bite"></i>
+            </div>
+            <h3>Pollería La Familia</h3>
+            <p class="sponsor-description">
+              Productos de pollo frescos y de calidad. Atendido por sus dueños
+              Alejandro y Micaela.
+            </p>
+            <div class="sponsor-contact">
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Antártida Argentina 294
+              </p>
+              <a href="" target="_blank">
+                <i class="fab fa-whatsapp"></i> +54 9 2954 27-2830
+              </a>
+            </div>
+          </div>
+
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <i class="fas fa-cut"></i>
+            </div>
+            <h3>Romy Mansilla</h3>
+            <p class="sponsor-subtitle">Peluquería Unisex</p>
+            <p class="sponsor-description">
+              Salón de belleza profesional. Cortes, coloración, tratamientos,
+              manicura y más.
+            </p>
+            <div class="sponsor-contact">
+              <a
+                href="https://www.instagram.com/roromisol/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i> @rominamansilla
+              </a>
+              <a href="https://www.facebook.com/romina.mansilla.568?locale=es_LA" target="_blank">
+                <i class="fab fa-facebook"></i> Romina Mansilla
+              </a>
+            </div>
+          </div>
+
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <i class="fas fa-carrot"></i>
+            </div>
+            <h3>Verdulería "Las Mellis"</h3>
+            <p class="sponsor-description">
+              Frutas y verduras frescas de la mejor calidad. Productos
+              seleccionados para tu mesa.
+            </p>
+            <div class="sponsor-contact">
+              <p><i class="fas fa-map-marker-alt"></i> Don Bosco y Villegas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sponsor CTA -->
+        <div class="sponsor-cta">
+          <div class="sponsor-cta-content">
+            <h3>¿Quieres ser nuestro patrocinador?</h3>
+            <p>
+              Únete a nuestra familia de sponsors y llega a miles de personas en
+              La Pampa y Argentina.
+            </p>
+            <a href="mailto:fueradelinea.jph@gmail.com" class="btn btn-primary">
+              <i class="fas fa-handshake"></i> Contactar para Patrocinio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">SÍGUENOS EN REDES</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Mantente conectado con nosotros</p>
+        </div>
+
+        <div class="social-grid">
+          <a
+            href="https://www.youtube.com/@FueraDeLinea-amen"
+            target="_blank"
+            class="social-card youtube"
+          >
+            <i class="fab fa-youtube"></i>
+            <h3>YouTube</h3>
+            <p>Streams, videos y entrevistas</p>
+            <span class="social-handle">@FueraDeLinea-amen</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/fueradelinea.ar"
+            target="_blank"
+            class="social-card instagram"
+          >
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <p>Fotos, stories y actualizaciones</p>
+            <span class="social-handle">@fueradelinea.ar</span>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@fueradelinea.ar"
+            target="_blank"
+            class="social-card tiktok"
+          >
+            <i class="fab fa-tiktok"></i>
+            <h3>TikTok</h3>
+            <p>Clips cortos y divertidos</p>
+            <span class="social-handle">@fueradelinea.ar</span>
+          </a>
+
+          <a
+            href="https://www.facebook.com/share/1X6yWV5iMF/"
+            target="_blank"
+            class="social-card facebook"
+          >
+            <i class="fab fa-facebook"></i>
+            <h3>Facebook</h3>
+            <p>Comunidad y eventos</p>
+            <span class="social-handle">Fuera De Línea</span>
+          </a>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>FUERA DE LÍNEA</h3>
+            <p>Streaming desde Santa Rosa, La Pampa</p>
+            <p class="footer-tagline">Con amor desde La Pampa 💛</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#acerca">Acerca</a></li>
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#videos">Videos</a></li>
+              <li><a href="#patrocinadores">Patrocinadores</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="footer-social">
+              <a
+                href="https://www.youtube.com/@FueraDeLinea-amen"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/fueradelinea.ar"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@fueradelinea.ar" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/share/1X6yWV5iMF/"
+                target="_blank"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>
+              <i class="fas fa-envelope"></i>
+              fueradelinea.jph@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Santa Rosa, La Pampa, Argentina
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Fuera De Línea - Santa Rosa, La Pampa, Argentina. Todos
+            los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
