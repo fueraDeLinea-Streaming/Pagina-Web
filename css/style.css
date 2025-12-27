@@ -1539,3 +1539,43 @@ section {
     padding: 25px;
   }
 }
+
+/* === VERSE OF THE WEEK === */
+.phrase-week {
+  padding: 60px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(156, 3, 173, 0.15),
+    rgba(64, 0, 120, 0.15)
+  );
+}
+
+.phrase-card {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 0, 255, 0.3);
+}
+
+.phrase-card i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.phrase-text {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.phrase-reference {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
