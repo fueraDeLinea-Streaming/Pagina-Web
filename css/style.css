@@ -385,6 +385,7 @@ body {
 
 /* Countdown Section */
 .countdown-section {
+display: none;
   position: relative;
   z-index: 2;
   padding: 40px 0;
