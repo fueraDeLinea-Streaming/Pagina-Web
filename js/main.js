@@ -478,3 +478,42 @@ console.log("YouTube: https://www.youtube.com/@FueraDeLinea-amen");
 console.log("Instagram: https://www.instagram.com/fueradelinea.ar");
 console.log("TikTok: https://www.tiktok.com/@fueradelinea.ar");
 console.log("Facebook: https://www.facebook.com/share/1X6yWV5iMF/");
+
+// === VERSE OF THE WEEK ===
+const verses = [
+  {
+    text: "Todo lo puedo en Cristo que me fortalece.",
+    reference: "Filipenses 4:13"
+  },
+  {
+    text: "Porque yo sé los planes que tengo para ustedes, planes de bienestar y no de calamidad.",
+    reference: "Jeremías 29:11"
+  },
+  {
+    text: "El Señor es mi pastor; nada me faltará.",
+    reference: "Salmos 23:1"
+  },
+  {
+    text: "El gozo del Señor es nuestra fortaleza.",
+    reference: "Nehemías 8:10"
+  }
+];
+
+// Obtener número de semana del año
+function getWeekNumber(date) {
+  const start = new Date(date.getFullYear(), 0, 1);
+  const diff = date - start;
+  const oneWeek = 1000 * 60 * 60 * 24 * 7;
+  return Math.floor(diff / oneWeek);
+}
+
+const weekNumber = getWeekNumber(new Date());
+const verseIndex = weekNumber % verses.length;
+
+const verseText = document.getElementById("weeklyVerse");
+const verseRef = document.getElementById("weeklyVerseRef");
+
+if (verseText && verseRef) {
+  verseText.textContent = `“${verses[verseIndex].text}”`;
+  verseRef.textContent = verses[verseIndex].reference;
+}
