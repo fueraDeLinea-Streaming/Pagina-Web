@@ -357,10 +357,14 @@ function initContactForm() {
         `Mensaje:\n${formData.message}`
     );
 
-    const mailtoLink = `mailto:fueradelinea.jph@gmail.com?subject=${subject}&body=${body}`;
+   const gmailLink =
+  `https://mail.google.com/mail/?view=cm&fs=1` +
+  `&to=fueradelinea.jph@gmail.com` +
+  `&su=${subject}` +
+  `&body=${body}`;
 
-    // Open email client
-    window.location.href = mailtoLink;
+window.open(gmailLink, "_blank");
+
 
     // Show success message
     showMessage(
