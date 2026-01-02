@@ -1719,3 +1719,8 @@ section {
   justify-content: center;
   z-index: 10;
 }
+
+.guests-section,
+.guests-wrapper {
+  overflow: visible;
+}
