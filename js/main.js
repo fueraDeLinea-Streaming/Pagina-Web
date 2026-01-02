@@ -521,3 +521,21 @@ if (verseText && verseRef) {
   verseText.textContent = `“${verses[verseIndex].text}”`;
   verseRef.textContent = verses[verseIndex].reference;
 }
+
+const guestsScroll = document.getElementById("guestsScroll");
+
+document.querySelector(".guests-arrow.left")
+  .addEventListener("click", () => {
+    guestsScroll.scrollBy({
+      left: -300,
+      behavior: "smooth"
+    });
+  });
+
+document.querySelector(".guests-arrow.right")
+  .addEventListener("click", () => {
+    guestsScroll.scrollBy({
+      left: 300,
+      behavior: "smooth"
+    });
+  });
